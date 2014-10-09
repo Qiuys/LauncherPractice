@@ -1,0 +1,164 @@
+<LinearLayout	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/screen_main" 
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <!-- MI 1S手机调试时的布局文件 -->
+    <!-- android:background="@drawable/screen_main" -->
+    <!-- MI 1S 1.53125ppi  854x480-->
+    <!-- Wellist width 8/10  height 1/13  top_margin 2height bottom_margin 1/2 height-->
+
+	<LinearLayout
+	    android:id="@+id/swelList"
+    	android:orientation="horizontal"
+   		android:layout_width="446dip"
+    	android:layout_height="24dip"
+    	android:layout_gravity="center"
+    	android:layout_marginTop="48dip"
+    	android:layout_marginBottom="12dip">
+	    <ImageButton 
+	        android:id="@+id/swelList_photo"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:background="@drawable/wellist_photo"
+	        android:contentDescription="photo"/>
+	    <ImageButton 
+	        android:id="@+id/swelList_music"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:background="@drawable/wellist_music"
+	        android:contentDescription="music"/>
+	    <ImageButton 
+	        android:id="@+id/swelList_video"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:background="@drawable/wellist_video"
+	        android:contentDescription="video"/>
+	    <ImageButton 
+	        android:id="@+id/swelList_browser"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:background="@drawable/wellist_browser"
+	        android:contentDescription="browser"/>
+	    <ImageButton 
+	        android:id="@+id/swelList_filemanager"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:background="@drawable/wellist_filemanager"
+	        android:contentDescription="file manager"/>
+	    <ImageButton 
+	        android:id="@+id/swelList_email"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:background="@drawable/wellist_email"
+	        android:contentDescription="email"/>
+	    <ImageButton 
+	        android:id="@+id/swelList_setting"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:background="@drawable/wellist_setting"
+	        android:contentDescription="setting"/>
+	</LinearLayout>
+	
+    <!-- WelGrid item width 145dip  height 96dip  -->
+	<GridLayout
+	    android:id="@+id/swelGrid"
+	    android:layout_gravity="center"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="12dip"
+	    android:orientation="horizontal"
+	    android:rowCount="2"
+	    android:columnCount="3">
+ 		<ImageButton 
+	        android:id="@+id/swelGrid_playStore"
+	        android:layout_width="145dip"
+	        android:layout_height="96dip"
+	        android:background="@drawable/welgrid_playstore"
+	        android:contentDescription="play store"/>
+	    <ImageButton 
+	        android:id="@+id/swelGrid_game"
+	        android:layout_width="145dip"
+	        android:layout_height="96dip"
+	        android:background="@drawable/welgrid_game"
+	        android:contentDescription="game"/>
+	    <ImageButton 
+	        android:id="@+id/swelGrid_allApps"
+	        android:layout_width="145dip"
+	        android:layout_height="96dip"
+	        android:background="@drawable/welgrid_allapps"
+	        android:contentDescription="all apps"/>
+	    <ImageButton 
+	        android:id="@+id/swelGrid_office"
+	        android:layout_width="145dip"
+	        android:layout_height="96dip"
+	        android:background="@drawable/welgrid_office"
+	        android:contentDescription="office"/>
+	    <ImageButton 
+	        android:id="@+id/swelGrid_mediaCenter"
+	        android:layout_width="145dip"
+	        android:layout_height="96dip"
+	        android:background="@drawable/welgrid_mediacenter"
+	        android:contentDescription="media center"/>
+	    <ImageButton 
+	        android:id="@+id/swelGrid_communication"
+	        android:layout_width="145dip"
+	        android:layout_height="96dip"
+	        android:background="@drawable/welgrid_communication"
+	        android:contentDescription="communication"/>
+	</GridLayout>
+	
+	<RelativeLayout 
+	    android:id="@+id/swelButtom"
+	    android:layout_gravity="center"
+	    android:layout_width="446dip"
+	    android:layout_height="wrap_content">
+	    <TextView 
+	        android:id="@+id/swelButtomClock"
+	        android:layout_alignParentLeft="true"
+	        android:layout_height="30dip"
+	        android:layout_width="wrap_content"
+	        android:textColor="#FFFFFF"/>
+	    <LinearLayout
+	        android:id="@+id/swelButtomTools"
+	        android:orientation="horizontal"
+	        android:layout_alignParentRight="true"
+	        android:layout_height="30dip"
+	        android:layout_width="wrap_content">
+
+	    	<ImageButton
+	    	    android:id="@+id/swelButtomTools_usb"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_width="30dip"
+	    	    android:background="#00000000"
+	    	    android:scaleType="fitCenter"
+	    	    android:src="@drawable/low_usb_w" />
+
+	    	<ImageButton 
+	        	android:id="@+id/swelButtomTools_web"
+	       		android:layout_height="wrap_content"
+	        	android:layout_width="30dip"
+	        	android:src="@drawable/low_web_w"
+	        	android:background="#00000000"
+	        	android:scaleType="fitCenter" />
+	    	<ImageButton 
+	        	android:id="@+id/swelButtomTools_wifi"
+	       		android:layout_height="wrap_content"
+	        	android:layout_width="30dip"
+	        	android:src="@drawable/low_wifi_w"
+	        	android:background="#00000000"
+	        	android:scaleType="fitCenter" />
+	    </LinearLayout>
+	</RelativeLayout>
+
+</LinearLayout>

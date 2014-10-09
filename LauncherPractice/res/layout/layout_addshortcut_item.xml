@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- AddShortcutActivity中GridView的Item -->
+<!-- 包含了icon背景、icon、打钩图片 app名 ，点击/焦点背景变化由drawable/appitemgrid_appitemicon定义 -->
+<RelativeLayout	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+	<FrameLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/addshortcutitemframe"
+		android:layout_centerHorizontal="true">
+		<ImageView
+        	android:id="@+id/addshortcutitemicon"
+        	android:layout_width="95dip"
+       		android:layout_height="95dip"
+       		android:padding="20dip"/>
+    	<ImageView
+        	android:id="@+id/addshortcutitemiconfg"
+        	android:layout_width="95dip"
+       		android:layout_height="95dip"
+    		android:background="@drawable/appitemgrid_appitemicon"/>
+    	<ImageView
+        	android:id="@+id/addshortcutitemiconsel"
+        	android:paddingTop="30dip"
+        	android:paddingLeft="30dip"
+        	android:layout_width="95dip"
+       		android:layout_height="95dip"/>
+
+	</FrameLayout>
+    	<TextView
+        	android:id="@+id/addshortcutitemname"
+        	android:layout_below="@id/addshortcutitemframe"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="#FFFFFF"
+        	android:gravity="center"
+        	android:layout_centerHorizontal="true"/>
+</RelativeLayout>

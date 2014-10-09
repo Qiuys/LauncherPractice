@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <style name="notitle">
+        <!--隐藏标题栏-->
+        <item name="android:windowNoTitle">true</item>
+        <!--全屏-->
+        <item name="android:windowFullscreen" >true</item>
+        <!-- 取消默认主题背景，提高性能 -->
+         <item name="android:windowBackground">@null</item>
+    </style> 
+  
+    <style name="notitlebbg">
+        <!--隐藏标题栏-->
+        <item name="android:windowNoTitle">true</item>
+        <!--全屏-->
+        <item name="android:windowFullscreen" >true</item>
+    </style>   
+</resources>
+<!-- 单独设置为一个XML 结构更好便于未来改进 -->

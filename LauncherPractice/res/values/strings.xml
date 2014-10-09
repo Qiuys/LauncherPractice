@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DrQ Launcher</string>
+    <string name="title_activity_welcome">DrQ Launcher</string>
+    <string name="title_activity_all_apps">All Apps</string>
+    <string name="title_activity_game">Game</string>
+    <string name="title_activity_add_shortcut">Add Shortcut</string>
+    <string name="title_activity_all_apps_activity2">All Apps Activity</string>
+
+</resources>
